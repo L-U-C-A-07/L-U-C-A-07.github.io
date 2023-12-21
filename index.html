@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAP Calculations</title>
+    <!-- collegamento css -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- script -->
+    <script src="script.js"></script>
+
+    <!-- creazione elementi -->
+
+    <!-- header & buttons -->
+    <div id="header">CollectAllPets Calculator</div>
+
+    <!-- main page -->
+    <div id="MainPage">
+
+        <!-- shiny -->
+        <div id="ShinyDataContainer">Shiny Luck
+            <img src="images/shiny-luck.png">
+            <div id="ShinyCells">
+
+                <div class="DataCell Dropbtn">Shiny Wall Luck
+                    <div id="ShinyWallLuck" class="white">-</div>
+                    <div id="dropdown-content-shiny-wall" class="Pointer">
+                        <!-- === 1 - 2 === -->
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.01</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.02</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.03</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.04</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.05</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.06</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.07</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.08</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.09</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.1</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.11</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.12</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.13</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.14</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.15</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.16</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.17</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.18</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.19</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.2</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.21</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.22</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.23</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.24</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.25</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.26</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.27</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.28</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.29</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.3</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.31</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.32</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.33</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.34</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.35</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.36</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.37</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.38</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.39</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.4</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.41</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.42</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.43</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.44</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.45</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.46</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.47</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.48</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.49</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.5</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.51</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.52</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.53</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.54</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.55</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.56</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.57</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.58</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.59</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.6</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.61</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.62</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.63</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.64</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.65</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.66</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.67</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.68</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.69</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.7</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.71</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.72</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.73</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.74</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.75</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.76</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.77</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.78</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.79</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.8</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.81</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.82</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.83</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.84</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.85</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.86</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.87</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.88</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.89</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.9</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.91</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.92</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.93</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.94</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.95</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.96</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.97</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.98</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x1.99</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2</button>
+                        <!-- === 2 - 3 === -->
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.01</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.02</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.03</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.04</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.05</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.06</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.07</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.08</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.09</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.1</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.11</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.12</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.13</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.14</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.15</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.16</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.17</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.18</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.19</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.2</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.21</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.22</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.23</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.24</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.25</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.26</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.27</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.28</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.29</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.3</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.31</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.32</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.33</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.34</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.35</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.36</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.37</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.38</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.39</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.4</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.41</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.42</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.43</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.44</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.45</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.46</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.47</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.48</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.49</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.5</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.51</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.52</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.53</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.54</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.55</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.56</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.57</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.58</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.59</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.6</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.61</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.62</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.63</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.64</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.65</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.66</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.67</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.68</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.69</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.7</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.71</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.72</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.73</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.74</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.75</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.76</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.77</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.78</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.79</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.8</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.81</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.82</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.83</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.84</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.85</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.86</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.87</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.88</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.89</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.9</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.91</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.92</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.93</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.94</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.95</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.96</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.97</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.98</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x2.99</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3</button>
+                        <!-- === 3 - 4 === -->
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.01</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.02</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.03</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.04</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.05</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.06</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.07</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.08</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.09</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.1</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.11</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.12</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.13</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.14</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.15</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.16</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.17</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.18</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.19</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.2</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.21</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.22</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.23</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.24</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.25</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.26</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.27</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.28</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.29</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.3</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.31</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.32</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.33</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.34</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.35</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.36</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.37</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.38</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.39</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.4</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.41</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.42</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.43</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.44</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.45</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.46</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.47</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.48</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.49</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.5</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.51</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.52</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.53</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.54</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.55</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.56</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.57</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.58</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.59</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.6</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.61</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.62</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.63</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.64</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.65</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.66</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.67</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.68</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.69</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.7</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.71</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.72</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.73</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.74</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.75</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.76</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.77</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.78</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.79</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.8</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.81</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.82</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.83</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.84</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.85</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.86</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.87</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.88</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.89</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.9</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.91</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.92</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.93</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.94</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.95</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.96</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.97</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.98</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x3.99</button>
+                        <button class="content Pointer" onclick="ShinyWallContentClicked(this)">x4</button>
+                    </div>
+                </div>
+
+                <div class="DataCell Dropbtn">Shiny Badge Luck
+                    <div id="ShinyBadgeLuck" class="white">-</div>
+                    <div id="dropdown-content-shiny-badge" class="Pointer">
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.01</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.02</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.03</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.04</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.05</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.06</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.07</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.08</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.09</button>
+                        <button class="content Pointer" onclick="ShinyBadgeContentClicked(this)">x1.1</button>
+                    </div>
+                </div>
+
+                <div class="DataCell">Pet Score
+                    <input matinput type="number" min="1" max="100000000" class="InputText" id="PS-input-text" oninput="ShinyPetScore()">
+                    <div id="ExpertLuck">
+                        <input type="checkbox" name="ExpertLuckCheck" id="ExpertLuckCheck" oninput="ShinyPetScore()">
+                        <label for="ExpertLuck">Expert Luck</label>
+                    </div>
+                </div>
+
+                <div class="DataCell Dropbtn">Shiny Runes Luck
+                    <div id="ShinyRunesLuck" class="white">-</div>
+                    <div id="dropdown-content-shiny-runes" class="Pointer">
+                        <!-- === 1 - 1.1 === -->
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.001</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.002</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.003</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.004</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.005</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.006</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.007</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.008</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.009</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.01</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.011</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.012</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.013</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.014</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.015</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.016</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.017</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.018</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.019</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.02</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.021</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.022</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.023</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.024</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.025</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.026</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.027</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.028</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.029</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.03</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.031</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.032</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.033</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.034</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.035</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.036</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.037</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.038</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.039</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.04</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.041</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.042</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.043</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.044</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.045</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.046</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.047</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.048</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.049</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.05</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.051</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.052</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.053</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.054</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.055</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.056</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.057</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.058</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.059</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.06</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.061</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.062</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.063</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.064</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.065</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.066</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.067</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.068</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.069</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.07</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.071</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.072</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.073</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.074</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.075</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.076</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.077</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.078</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.079</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.08</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.081</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.082</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.083</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.084</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.085</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.086</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.087</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.088</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.089</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.09</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.091</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.092</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.093</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.094</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.095</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.096</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.097</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.098</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.099</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.1</button>
+                        <!-- === 1.1 - 1.2 === -->
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.101</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.102</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.103</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.104</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.105</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.106</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.107</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.108</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.109</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.11</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.111</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.112</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.113</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.114</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.115</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.116</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.117</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.118</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.119</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.12</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.121</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.122</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.123</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.124</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.125</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.126</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.127</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.128</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.129</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.13</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.131</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.132</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.133</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.134</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.135</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.136</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.137</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.138</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.139</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.14</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.141</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.142</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.143</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.144</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.145</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.146</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.147</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.148</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.149</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.15</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.151</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.152</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.153</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.154</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.155</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.156</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.157</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.158</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.159</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.16</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.161</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.162</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.163</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.164</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.165</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.166</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.167</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.168</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.169</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.17</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.171</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.172</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.173</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.174</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.175</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.176</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.177</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.178</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.179</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.18</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.181</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.182</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.183</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.184</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.185</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.186</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.187</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.188</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.189</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.19</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.191</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.192</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.193</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.194</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.195</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.196</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.197</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.198</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.199</button>
+                        <button class="content Pointer" onclick="ShinyRunesContentClicked(this)">x1.2</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="ShinyResult">Shiny odds: 1 in 1000</div>
+        </div>
+
+    </div>
+
+    <!-- bottom -->
+    <div id="bottom">
+        <div id="BottomInfo">Website made by luca33573 (Dm me on discord for anything) v0.1.0.<br>
+            This website is not related to the game creator.<br>
+            Inspirated by Birdman calculator.
+        </div>
+        <!-- <div id="Cookie">
+            <div id="Save" class="CookieBtns Pointer">SAVE</div>
+            <div id="Reset" class="CookieBtns Pointer">RESET</div>
+        </div> -->
+    </div>
+
+</body>
+</html>
