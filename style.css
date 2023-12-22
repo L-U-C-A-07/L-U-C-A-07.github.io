@@ -136,7 +136,7 @@ input::-webkit-inner-spin-button {
     border-bottom: var(--c1) 3px solid;
     color: var(--c4);
 }
-#ShinyRunesLuck {
+#ShinyRunesLuckCell {
     margin-right: 0;
 }
 #ShinyResult {
