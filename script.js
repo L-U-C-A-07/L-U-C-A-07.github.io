@@ -1,3 +1,4 @@
+console.log("Test");
 // shniy odds
 let SBadge
 let SPS
