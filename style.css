@@ -300,3 +300,23 @@ input::-webkit-inner-spin-button {
 .Dropbtn:hover #dropdown-content-met-runes {
     display: inline-block;
 }
+
+/* ============== Giant odds ============== */
+#GiantDataContainer {
+    position: relative;
+    height: 120px;
+    padding: 10px;
+    color: var(--c5);
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#GiantCells {
+    padding: 5px;
+    height: calc(100% - 55px);
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 100;
+    padding-right: 15px;
+}
