@@ -111,11 +111,10 @@ input::-webkit-inner-spin-button {
 #ShinyDataContainer {
     position: relative;
     height: 120px;
-    padding: 10px;
+    padding: 10px 0px 20px 10px;
     color: var(--c5);
     font-size: 22px;
     font-weight: 600;
-    padding-bottom: 20px;
 }
 #ShinyCells {
     padding: 5px;
@@ -124,6 +123,7 @@ input::-webkit-inner-spin-button {
     align-items: center;
     font-size: 19px;
     font-weight: 100;
+    padding-right: 15px;
 }
 .DataCell {
     background-color: var(--c2);
@@ -135,6 +135,9 @@ input::-webkit-inner-spin-button {
     border-radius: 8px 8px 0px 0px;
     border-bottom: var(--c1) 3px solid;
     color: var(--c4);
+}
+#ShinyRunesLuck {
+    margin-right: 0;
 }
 #ShinyResult {
     font-size: 20px;
@@ -240,6 +243,7 @@ input::-webkit-inner-spin-button {
     align-items: center;
     font-size: 19px;
     font-weight: 100;
+    padding-right: 15px;
 }
 #MetResult {
     font-size: 20px;
