@@ -63,5 +63,4 @@ function UpdateShinyOdds() {
     else {
         SResult.textContent = "Shiny odds: 1 in " + (Math.round((1000/SBadge/SWall/SRunes)*10)/10)
     }
-    console.log("Test");
 }
