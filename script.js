@@ -1,10 +1,3 @@
-// ================ main ================
-console.log(
-    Number(1234567890.12).toLocaleString()
- )
-function commafy( num ) {
-    num.toString().replace( /\B(?=(?:\d{3})+)$/g, "," );
-}
 // ================ shniy odds ================
 let SBadge
 let SPS
