@@ -1,4 +1,11 @@
-// shniy odds
+// ================ main ================
+console.log(
+    Number(1234567890.12).toLocaleString()
+ )
+function commafy( num ) {
+    num.toString().replace( /\B(?=(?:\d{3})+)$/g, "," );
+}
+// ================ shniy odds ================
 let SBadge
 let SPS
 let SWall
@@ -47,7 +54,7 @@ function ShinyRunesContentClicked(btn) {
 }
 
 function UpdateShinyOdds() {
-    const SResult = document.getElementById("ShinyResult")
+    const SResult = document.getElementById("ShinyResult");
     if (SBadge == undefined) {
         SBadge = 1;
     }
@@ -58,9 +65,52 @@ function UpdateShinyOdds() {
         SRunes = 1;
     }
     if (expert == true) {
-        SResult.textContent = "Shiny odds: 1 in " + (Math.round((1000/SBadge/SWall/SRunes/(1+SPS/10000000))*10)/10)
+        SResult.textContent = "Shiny odds: 1 in " + (Math.round((1000/SBadge/SWall/SRunes/(1+SPS/10000000))*10)/10).toLocaleString();
     }
     else {
-        SResult.textContent = "Shiny odds: 1 in " + (Math.round((1000/SBadge/SWall/SRunes)*10)/10)
+        SResult.textContent = "Shiny odds: 1 in " + (Math.round((1000/SBadge/SWall/SRunes)*10)/10).toLocaleString();
     }
+}
+
+// ================ metallic odds ================
+let MWall
+let MBadge
+let MRunes
+
+function MetWallContentClicked(btn) {
+    const MetWallLuckText = document.getElementById("MetWallLuck");
+    let value = btn.innerText;
+    MetWallLuckText.textContent = value;
+    MWall = value.slice(0, -1) * 100000;
+    UpdateMetOdds();
+}
+
+function MetBadgeContentClicked(btn) {
+    const MetBadgeLuckText = document.getElementById("MetBadgeLuck");
+    let value = btn.innerText;
+    MetBadgeLuckText.textContent = value;
+    MBadge = value.substring(1);
+    UpdateMetOdds();
+}
+
+function MetRunesContentClicked(btn) {
+    const MetRunesLuckText = document.getElementById("MetRunesLuck");
+    let value = btn.innerText;
+    MetRunesLuckText.textContent = value;
+    MRunes = value.substring(1);
+    UpdateMetOdds();
+}
+
+function UpdateMetOdds() {
+    const MResult = document.getElementById("MetResult");
+    if (MWall == undefined) {
+        MWall = 1;
+    }
+    if (MBadge == undefined) {
+        MBadge = 1;
+    }
+    if (MRunes == undefined) {
+        MRunes = 1;
+    }
+    MResult.textContent = "Metallic odds: 1 in " + Math.round(10000000/MWall/MBadge/MRunes).toLocaleString();
 }

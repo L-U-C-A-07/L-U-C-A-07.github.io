@@ -1,12 +1,4 @@
-body {
-    background-color: var(--c3);
-    margin:0;
-    font-family: sans-serif;
-    user-select: none;
-    overflow: hidden;
-}
-
-/* ======== VAR color palette ======== */
+/* ============== color palette & main css ============== */
 :root {
     --c1: #161A30;
     --c2: #1d2241;
@@ -18,8 +10,39 @@ body {
 .Pointer:hover {
     cursor: pointer;
 }
+.white {
+    color: var(--c5);
+}
+.SepLine {
+    height: 3px;
+    background-color: var(--c1);
+}
+img {
+    width: 22px;
+}
+body {
+    background-color: var(--c3);
+    margin:0;
+    font-family: sans-serif;
+    user-select: none;
+    overflow: hidden;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+    background-color: var(--c2);
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--c1);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-/* ======== header & btns ======== */
+/* ============== header & btns ============== */
 #header {
     background-color: var(--c1);
     width: calc(100% - 10px);
@@ -33,7 +56,7 @@ body {
     padding: 0px 5px 0px 5px;
 }
 
-/* ======== bottom ======== */
+/* ============== bottom ============== */
 #bottom {
     position: absolute;
     bottom: 0;
@@ -73,32 +96,18 @@ body {
     width: 100%;
 }
 
-/* ======== Main Page ======== */
+/* ============== Main Page ============== */
 #MainPage {
     position: absolute;
     width: 100%;
     height: calc(100% - 100px);
     background: var(--c3);
     overflow-y: scroll;
-}
-::-webkit-scrollbar {
-    background-color: var(--c2);
-    width: 10px;
-    height: 10px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--c1);
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-.white {
-    color: var(--c5);
+    display: grid;
+    grid-template-rows: 150px 3px 150px 3px;
 }
  
-/* ======== Shiny odds ======== */
+/* ============== Shiny odds ============== */
 #ShinyDataContainer {
     position: relative;
     height: 120px;
@@ -106,9 +115,7 @@ input::-webkit-inner-spin-button {
     color: var(--c5);
     font-size: 22px;
     font-weight: 600;
-}
-#ShinyDataContainer img {
-    width: 22px;
+    padding-bottom: 20px;
 }
 #ShinyCells {
     padding: 5px;
@@ -120,15 +127,14 @@ input::-webkit-inner-spin-button {
 }
 .DataCell {
     background-color: var(--c2);
-    width: 140px;
+    width: 155px;
     height: 40px;
-    margin: 10px;
+    margin-right: 15px;
     font-size: 17px;
     padding: 5px;
     border-radius: 8px 8px 0px 0px;
     border-bottom: var(--c1) 3px solid;
     color: var(--c4);
-    min-width: 140px;
 }
 #ShinyResult {
     font-size: 20px;
@@ -146,6 +152,7 @@ input::-webkit-inner-spin-button {
     display: none;
     max-height: 150px;
     overflow-y: scroll;
+    z-index: 2;
 }
 .Dropbtn:hover #dropdown-content-shiny-wall {
     display: inline-block;
@@ -162,6 +169,7 @@ input::-webkit-inner-spin-button {
     display: none;
     max-height: 150px;
     overflow-y: scroll;
+    z-index: 2;
 }
 .content {
     width: 100%;
@@ -209,7 +217,82 @@ input::-webkit-inner-spin-button {
     display: none;
     max-height: 150px;
     overflow-y: scroll;
+    z-index: 2;
 }
 .Dropbtn:hover #dropdown-content-shiny-runes {
+    display: inline-block;
+}
+
+/* ============== Metallic odds ============== */
+#MetDataContainer {
+    position: relative;
+    height: 120px;
+    padding: 10px;
+    color: var(--c5);
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+#MetCells {
+    padding: 5px;
+    height: calc(100% - 55px);
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 100;
+}
+#MetResult {
+    font-size: 20px;
+    font-weight: 100;
+}
+/* a */
+#dropdown-content-met-wall {
+    position: relative;
+    top: 5px;
+    left: -5px;
+    background-color: var(--c4);
+    color: var(--c6);
+    width: calc(100% + 4px);
+    border: 3px solid var(--c1);
+    display: none;
+    max-height: 150px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+.Dropbtn:hover #dropdown-content-met-wall {
+    display: inline-block;
+}
+/* b */
+#dropdown-content-met-badge {
+    position: relative;
+    top: 5px;
+    left: -5px;
+    background-color: var(--c4);
+    color: var(--c6);
+    width: calc(100% + 4px);
+    border: 3px solid var(--c1);
+    display: none;
+    max-height: 150px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+.Dropbtn:hover #dropdown-content-met-badge {
+    display: inline-block;
+}
+/* b */
+#dropdown-content-met-runes {
+    position: relative;
+    top: 5px;
+    left: -5px;
+    background-color: var(--c4);
+    color: var(--c6);
+    width: calc(100% + 4px);
+    border: 3px solid var(--c1);
+    display: none;
+    max-height: 150px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+.Dropbtn:hover #dropdown-content-met-runes {
     display: inline-block;
 }
